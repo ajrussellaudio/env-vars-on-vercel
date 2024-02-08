@@ -1,7 +1,8 @@
 function App() {
+  const env = import.meta.env;
   return (
     <>
-      <h1>Hello World</h1>
+      <pre>{JSON.stringify(env, null, 2)}</pre>
     </>
   );
 }
